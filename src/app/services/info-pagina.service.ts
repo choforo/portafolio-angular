@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { TouchSequence } from 'selenium-webdriver';
-import { ConsoleReporter } from 'jasmine';
 import { InfoPagina } from '../interfaces/info-pagina.interface';
 
 @Injectable({
@@ -33,7 +31,6 @@ export class InfoPaginaService {
     this.http.get('https://angular-html-6e7d4.firebaseio.com/equipo.json')
         .subscribe( ( resp: any []) => {
           this.equipo = resp;
-          //console.log(resp);
         });
   }
 }
