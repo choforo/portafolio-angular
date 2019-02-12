@@ -13,4 +13,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  bucarProducto( termino: string ) {
+    console.log(termino);
+
+  }
+
 }
